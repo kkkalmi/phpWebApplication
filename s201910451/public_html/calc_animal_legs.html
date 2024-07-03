@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta content="김건우 201910451" name="author">
+		<style>
+			input[type=text] {
+			width: 150px;
+			height: 25px;
+			font-size: 15px;
+			border: 0;
+			border-radius: 15px;
+			outline: none;
+			padding-left: 10px;
+			background-color: rgb(233, 233, 233);
+			}
+			
+			input[type=submit] {
+			color : white;
+			width: 210px;
+			height: 32px;
+			font-size: 15px;
+			border: 0;
+			border-radius: 15px;
+			outline: none;
+			padding-left: 10px;
+			background-color: #666666;
+			}
+			p {
+			text-align:center;
+			}
+		</style>
+	</head>
+	<!--
+		이름 : 김건우(201910451)				
+		날짜 : 2024-04-16
+		내용 : 농장정보시스템 입력 폼
+	-->
+	<body>
+		<h3 style = "text-align:center;">각 가축 숫자를 입력하세요.</h3>
+		<form method ="post" action="calc_animal_legs_process.php">
+			<p>소 : <input type="text" name="animal[]" autofocus></p>
+			<p>닭 : <input type="text" name="animal[]"</p>
+			<p>말 : <input type="text" name="animal[]"</p>
+			<p>칠면조 : <input type="text" name="animal[]"</p>
+			<p>돼지 : <input type="text" name="animal[]"</p>
+			<p>타조 : <input type="text" name="animal[]"</p>
+			<br><br><input name="submit" value = "입력" type="submit">
+		</form>
+	</body>
+</html>
+										

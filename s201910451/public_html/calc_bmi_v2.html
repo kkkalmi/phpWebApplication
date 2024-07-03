@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+		<title></title>
+		<style>
+			input[type=number] {
+			text-align: center;
+			width: 300px;
+			height: 35px;
+			font-size: 15px;
+			border: 0;
+			border-radius: 15px;
+			outline: none;
+			padding-left: 1px;
+			background-color: rgb(233, 233, 233);
+			}
+			
+			p {
+			text-align : center;
+			}
+			
+			input[type=radio]{
+			display: none;
+			
+			}
+			input[type=radio]+label{
+			display: inline-block;
+			cursor: pointer;
+			height: 24px;
+			width: 90px;
+			border: 1px solid #333;
+			line-height: 24px;
+			text-align: center;
+			font-weight:bold;
+			font-size:13px;
+			
+			}
+			input[type=radio]+label{
+			background-color: #fff;
+			color: #333;
+			}
+			input[type=radio]:checked+label{
+			background-color: #333;
+			color: #fff;
+			}
+			input[type=submit] {
+			color : white;
+			width: 100px;
+			height: 32px;
+			font-size: 15px;
+			border: 0;
+			border-radius: 15px;
+			outline: none;
+			padding-left: 10px;
+			background-color: #666666;
+			}
+		</style>
+		<meta content="김건우 201910451" name="author">
+	</head>
+	<body>
+		<!--
+			이름 : 김건우(201910451)
+			날짜 : 2024.04.30
+			내용 : bmi 계산기 입력 화면
+		-->
+		<form method="post" action="calc_bmi_process_v2.php" name="bmi">
+			<table style="text-align: left; width: 500px; height: 110px;"border="1" cellpadding="2" cellspacing="2">
+				<tbody>
+					<tr>
+						<td style="vertical-align: top;">
+							<p>제작자 : 김건우 (201910451)</p>
+							<h1 style = "text-align : center;">체질량지수(BMI) 계산기</h1>
+							<p><input name="cm" type="number" placeholder = "신장(cm)를 입력하세요" step = 0.1 autofocus required></p>
+							<p><input name="kg" type="number" placeholder = "몸무게(kg)를 입력하세요" step = 0.1 ></p>
+							<p style = "text-align:center;"><input name="bmi_gender" value="man" type="radio" id="select" checked><label for="select">남</label>
+							<input name="bmi_gender" value="woman" type="radio" id="select2"><label for="select2">여</label></p>
+							<p style = "text-align:center;"><input name="submit" value="입력" type="submit"></p><br>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<br>
+		<br>
+	</body>
+</html>
